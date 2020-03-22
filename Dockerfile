@@ -10,4 +10,4 @@ RUN apt-get update && \
 
 COPY ./server.py /usr/local/lib/python3.6/dist-packages/TTS/server/server.py
 
-ENTRYPOINT [ "/usr/bin/python3 -m TTS.server.server" ]
+ENTRYPOINT [ "python3 -m TTS.server.server" ]
